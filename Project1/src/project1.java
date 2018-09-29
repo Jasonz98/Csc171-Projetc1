@@ -12,7 +12,7 @@ public class project1 {
     int a = 1;
     
     while ( a < 2 ) {
-    System.out.println("Enter start to begin or enter quit to leave");
+    System.out.println("Enter start to begin/Enter quit to leave");
     System.out.println("Start/Quit?");
     String control = scan.nextLine();
     if (control.equals("quit")){
@@ -21,14 +21,18 @@ public class project1 {
     
       int distance = rand.nextInt(50);
       int height = rand.nextInt(50);
-        System.out.println("The current distance to the wall is:" + distance );
-        System.out.println("The current height of the wall is:" + height);	
+        System.out.println("The current distance to the wall is:" + distance +"m" );
+        System.out.println("The current height of the wall is:" + height + "m");	
    
         System.out.println("Please enter an angle from 0 - 90 Degrees");
-          int angel = scan.nextInt(); 
-
+          double angle = scan.nextDouble(); 
+          double radians = Math.toRadians(angle);
+          
         System.out.println("Please enter a speed");
           int speed = scan.nextInt();
+          
+        double y = distance *  Math.tan(radians);
+        System.out.println(y);
           }
    
     }
