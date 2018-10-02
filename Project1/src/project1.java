@@ -1,6 +1,5 @@
 import java.util.Random;
 import java.util.Scanner;
-//Hello
 
 public class project1 {
 
@@ -9,10 +8,12 @@ public class project1 {
 	//Initialize
 	Random rand = new Random();
     	Scanner scan = new Scanner(System.in);
-    
+    	
+     int score = 0; 
    	 int a = 1;
     
   	 while ( a < 2 ) {
+  		 score--;
   		 System.out.println("Enter start to begin/Enter quit to leave");
    		 System.out.println("Start/Quit?");
 		 
@@ -38,6 +39,7 @@ public class project1 {
           
          double y = distance *  Math.tan(radians);
          System.out.println(y);
+         System.out.println("Your current score is:" + score);
           }
    
     }
