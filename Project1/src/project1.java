@@ -23,11 +23,11 @@ public class project1 {
     		break;
   	  }else if (control.equals("start")) {
  	   
-     	 	int distance = rand.nextInt(50);
-    		int height = rand.nextInt(50);
+     	 	int d = rand.nextInt(50);
+    		int h = rand.nextInt(50);
 		 
-         System.out.println("The current distance to the wall is:" + distance +"m" );
-         System.out.println("The current height of the wall is:" + height + "m");	
+         System.out.println("The current distance to the wall is:" + d +"m" );
+         System.out.println("The current height of the wall is:" + h + "m");	
    
          System.out.println("Please enter an angle from 0 - 90 Degrees");
 		 
@@ -35,9 +35,9 @@ public class project1 {
          double radians = Math.toRadians(angle);
           
          System.out.println("Please enter a speed");
-         int speed = scan.nextInt();
+         int v = scan.nextInt();
           
-         double y = distance *  Math.tan(radians);
+         double y = d *  Math.tan(radians) - (9.8 * d * d)/ (2 * (Math.pow(v * Math.cos(radians), 2)));
          System.out.println(y);
          System.out.println("Your current score is:" + score);
           }
