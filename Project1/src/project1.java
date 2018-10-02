@@ -39,6 +39,8 @@ public class project1 {
          double y = distance *  Math.tan(radians);
          System.out.println(y);
           }
+		 
+	
    
     }
         
