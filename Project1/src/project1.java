@@ -50,13 +50,13 @@ public class project1 {
 	 	if ((y>h)&&(percent_difference<=0.1)){
 		 System.out.println("You made it!");
 		}
-		else if ((y>h)&&(percent_difference<=0.5){
+		else if ((y>h)&&(percent_difference>=0.1){
 		 System.out.println("Plenty of room! ");
 		}
 		else if ((y<h)&&(percent_difference<=0.1)){
 		 System.out.println("Not quite over!");	
 		}
-		else if ((y<h)&&(percent_difference>=0.5)){
+		else if ((y<h)&&(percent_difference>=0.1)){
 		 System.out.println("Not even close!");
 		}
           }
