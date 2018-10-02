@@ -1,5 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
+//hello
 public class project1 {
 
 	public static void main(String[] args) {
@@ -9,7 +10,7 @@ public class project1 {
     	Scanner scan = new Scanner(System.in);
     	
      int score = 0; 
-     System.out.println("Enter start/quit to start the game or leave");
+     System.out.print("Enter start/quit to start the game or leave: ");
   	 String control = scan.nextLine();
      
   	 while ( control.equals("start")) {
@@ -21,12 +22,12 @@ public class project1 {
          System.out.println("The current distance to the wall is:" + d +"m" );
          System.out.println("The current height of the wall is:" + h + "m");	
    
-         System.out.println("Please enter an angle from 0 - 90 Degrees");
+         System.out.print("Please enter an angle from 0 - 90 Degrees: ");
 		 
          double angle = scan.nextDouble(); 
          double radians = Math.toRadians(angle);
           
-         System.out.println("Please enter a speed");
+         System.out.print("Please enter a speed: ");
          int v = scan.nextInt();
           
          double y = d *  Math.tan(radians) - (9.8 * d * d)/ (2 * (Math.pow(v * Math.cos(radians), 2)));
@@ -56,10 +57,8 @@ public class project1 {
 	         score -= 3;
 		}
 		 System.out.println("Your current score is:" + score);
-		 
-		 System.out.println("Do you want to play again? yes/no");
-	  	 String control2 = scan.next();
-	  	 
+		 System.out.print("Do you want to play again? yes/no: ");
+	  	 String control2 = scan.nextLine();
 	  	 if (control2.equals("yes")) {
 	  		 System.out.println("Let's start!");
 	  	 }else if (control2.equals("no")) {
