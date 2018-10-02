@@ -7,32 +7,36 @@ public class project1 {
     
 	//Initialize
 	Random rand = new Random();
-    Scanner scan = new Scanner(System.in);
+    	Scanner scan = new Scanner(System.in);
     
-    int a = 1;
+   	 int a = 1;
     
-    while ( a < 2 ) {
-    System.out.println("Enter start to begin/Enter quit to leave");
-    System.out.println("Start/Quit?");
-    String control = scan.nextLine();
-    if (control.equals("quit")){
-    	break;
-    }else if (control.equals("start")) {
-    
-      int distance = rand.nextInt(50);
-      int height = rand.nextInt(50);
-        System.out.println("The current distance to the wall is:" + distance +"m" );
-        System.out.println("The current height of the wall is:" + height + "m");	
+  	 while ( a < 2 ) {
+  		 System.out.println("Enter start to begin/Enter quit to leave");
+   		 System.out.println("Start/Quit?");
+		 
+   	 String control = scan.nextLine();
+		 
+   	 if (control.equals("quit")){
+    		break;
+  	  }else if (control.equals("start")) {
+ 	   
+     	 	int distance = rand.nextInt(50);
+    		 int height = rand.nextInt(50);
+		 
+         System.out.println("The current distance to the wall is:" + distance +"m" );
+         System.out.println("The current height of the wall is:" + height + "m");	
    
-        System.out.println("Please enter an angle from 0 - 90 Degrees");
-          double angle = scan.nextDouble(); 
-          double radians = Math.toRadians(angle);
+         System.out.println("Please enter an angle from 0 - 90 Degrees");
+		 
+         double angle = scan.nextDouble(); 
+         double radians = Math.toRadians(angle);
           
-        System.out.println("Please enter a speed");
-          int speed = scan.nextInt();
+         System.out.println("Please enter a speed");
+         int speed = scan.nextInt();
           
-        double y = distance *  Math.tan(radians);
-        System.out.println(y);
+         double y = distance *  Math.tan(radians);
+         System.out.println(y);
           }
    
     }
