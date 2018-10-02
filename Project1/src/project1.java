@@ -10,21 +10,14 @@ public class project1 {
     	Scanner scan = new Scanner(System.in);
     	
      int score = 0; 
-   	 int a = 1;
-    
-  	 while ( a < 2 ) {
+     System.out.println("Enter start/quit to start the game or leave");
+  	 String control = scan.nextLine();
+     
+  	 while ( control.equals("start")) {
   		 score--;
-  		 System.out.println("Enter start/quit to start the game or leave");
-   		
-		 
-   	 String control = scan.nextLine();
-		 
-   	 if (control.equals("quit")){
-    		break;
-  	  }else if (control.equals("start")) {
- 	   
-     	 	int d = rand.nextInt(50);
-    		int h = rand.nextInt(50);
+   	
+  		 int d = rand.nextInt(50);
+    	 int h = rand.nextInt(50);
 		 
          System.out.println("The current distance to the wall is:" + d +"m" );
          System.out.println("The current height of the wall is:" + h + "m");	
@@ -64,9 +57,17 @@ public class project1 {
 	         score -= 3;
 		}
 		 System.out.println("Your current score is:" + score);
-          }
-		 
-	
+		 System.out.println("Do you want to play again? yes/no");
+	  	 String control2 = scan.nextLine();
+	  	 if (control2.equals("yes")) {
+	  		 System.out.println("Let's start!");
+	  	 }else if (control2.equals("no")) {
+	  	     break;
+	  	 }
+        }
+  	     
+  	     
+  	     
    
     }
         
@@ -75,6 +76,6 @@ public class project1 {
     
     
 
-	}
-
 }
+
+
