@@ -15,7 +15,6 @@ public class project1 {
   	 while ( a < 2 ) {
   		
   		 System.out.println("Enter start to begin/Enter quit to leave");
-   		 System.out.println("Start/Quit?");
 		 
    	 String control = scan.nextLine();
 		  
@@ -23,6 +22,7 @@ public class project1 {
     		break;
   	  }else if (control.equals("start")) {
  	     
+  		  //If the game start, you lose 1 point
   		 score--;
   		 System.out.println("Your score is:" + score);
      	 	
