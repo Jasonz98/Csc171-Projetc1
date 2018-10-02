@@ -44,8 +44,9 @@ public class project1 {
 	 //double difference;
 	 double percent_difference;
 		 
-	 difference = h-y;
+	 //difference = h-y;
 	 percent_difference = Math.abs(h-y)/h;
+		 
 	 	if ((y>h)(percent_difference<=0.1){
 		 System.out.println("You made it!");
 		}
