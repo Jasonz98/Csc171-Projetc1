@@ -22,7 +22,7 @@ public class project1 {
   	  }else if (control.equals("start")) {
  	   
      	 	int distance = rand.nextInt(50);
-    		 int height = rand.nextInt(50);
+    		int height = rand.nextInt(50);
 		 
          System.out.println("The current distance to the wall is:" + distance +"m" );
          System.out.println("The current height of the wall is:" + height + "m");	
