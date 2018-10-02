@@ -1,6 +1,6 @@
 import java.util.Random;
 import java.util.Scanner;
-//hello
+
 public class project1 {
 
 	public static void main(String[] args) {
@@ -38,6 +38,12 @@ public class project1 {
          int v = scan.nextInt();
           
          double y = d *  Math.tan(radians) - (9.8 * d * d)/ (2 * (Math.pow(v * Math.cos(radians), 2)));
+         if (h - y > 0) {
+        	 System.out.println("You did not get over");
+         } else {
+        	 System.out.println("You made it");
+         }
+         
          System.out.println(y);
          System.out.println("Your current score is:" + score);
           }
