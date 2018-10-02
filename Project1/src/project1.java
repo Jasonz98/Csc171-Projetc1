@@ -10,18 +10,11 @@ public class project1 {
     	Scanner scan = new Scanner(System.in);
     	
      int score = 0; 
-   	 int a = 1;
-    
-  	 while ( a < 2 ) {
-  		 score--;
-  		 System.out.println("Enter start/quit to start the game or leave");
-   		
-		 
-   	 String control = scan.nextLine();
-		 
-   	 if (control.equals("quit")){
-    		break;
-  	  }else if (control.equals("start")) {
+     System.out.println("Enter start/quit to start the game or leave");
+     String control = scan.nextLine();
+  	 
+     while ( control.equals("start") ) {
+  		    score--;
  	   
      	 	int d = rand.nextInt(50);
     		int h = rand.nextInt(50);
@@ -59,6 +52,9 @@ public class project1 {
 		else if ((y<h)&&(percent_difference>=0.5){
 		 System.out.println("Not even close!");
 		}
+		
+		System.out.println("Enter start/quit to start the game or leave");
+		control = scan.nextLine();
           }
 		 
 	
