@@ -43,7 +43,7 @@ public class project1 {
 	 	if ((y>h)&&(percent_difference<=0.1)){
 		 System.out.println("You made it!");
 		}
-		else if ((y>h)&&(percent_difference>=0.1){
+		else if ((y>h)&&(percent_difference>=0.1)){
 		 System.out.println("Plenty of room! ");
 		}
 		else if ((y<h)&&(percent_difference<=0.1)){
@@ -68,4 +68,3 @@ public class project1 {
 
 	}
 
-}
