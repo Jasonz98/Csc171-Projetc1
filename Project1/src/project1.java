@@ -13,31 +13,17 @@ public class project1 {
    	 int a = 1;
     
   	 while ( a < 2 ) {
-<<<<<<< HEAD
-  		
-  		 System.out.println("Enter start to begin/Enter quit to leave");
-=======
   		 score--;
   		 System.out.println("Enter start/quit to start the game or leave");
    		
->>>>>>> 8fa4cfba387257c18db04ac5074b8ecf2a7b5f86
 		 
    	 String control = scan.nextLine();
 		 
    	 if (control.equals("quit")){
     		break;
   	  }else if (control.equals("start")) {
-<<<<<<< HEAD
- 	     
-  		  //If the game start, you lose 1 point
-  		 score--;
-  		 System.out.println("Your score is:" + score);
-     	 	
-  		    int d = rand.nextInt(50);
-=======
  	   
      	 	int d = rand.nextInt(50);
->>>>>>> 8fa4cfba387257c18db04ac5074b8ecf2a7b5f86
     		int h = rand.nextInt(50);
 		 
          System.out.println("The current distance to the wall is:" + d +"m" );
@@ -54,6 +40,24 @@ public class project1 {
          double y = d *  Math.tan(radians) - (9.8 * d * d)/ (2 * (Math.pow(v * Math.cos(radians), 2)));
          System.out.println(y);
          System.out.println("Your current score is:" + score);
+		 
+	 //double difference;
+	 double percent_difference;
+		 
+	 difference = h-y;
+	 percent_difference = Math.abs(h-y)/h;
+	 	if ((y>h)(percent_difference<=0.1){
+		 System.out.println("You made it!");
+		}
+		else if ((y>h)&&(percent_difference<=0.2){
+		 System.out.println("Plenty of room! ");
+		}
+		else if ((y<h)&&(percent_difference<=0.1){
+		 System.out.println("Not quite over!");	
+		}
+		else if ((y<h)&&(percent_difference>=0.5){
+		 System.out.println("Not even close!");
+		}
           }
 		 
 	
