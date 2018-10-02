@@ -39,7 +39,7 @@ public class project1 {
           
          double y = d *  Math.tan(radians) - (9.8 * d * d)/ (2 * (Math.pow(v * Math.cos(radians), 2)));
          System.out.println(y);
-         System.out.println("Your current score is:" + score);
+         
 		 
 	 //double difference;
 	 double percent_difference;
@@ -63,6 +63,7 @@ public class project1 {
 		 System.out.println("Not even close!");
 	         score -= 3;
 		}
+		 System.out.println("Your current score is:" + score);
           }
 		 
 	
