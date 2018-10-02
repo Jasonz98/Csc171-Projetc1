@@ -40,16 +40,16 @@ public class project1 {
 	 //difference = h-y;
 	 percent_difference = Math.abs(h-y)/h;
 		 
-	 	if ((y>h)&&(percent_difference<=0.1){
+	 	if ((y>h)&&(percent_difference<=0.1)){
 		 System.out.println("You made it!");
 		}
-		else if ((y>h)&&(percent_difference<=0.2){
+		else if ((y>h)&&(percent_difference>=0.1){
 		 System.out.println("Plenty of room! ");
 		}
-		else if ((y<h)&&(percent_difference<=0.1){
+		else if ((y<h)&&(percent_difference<=0.1)){
 		 System.out.println("Not quite over!");	
 		}
-		else if ((y<h)&&(percent_difference>=0.5){
+		else if ((y<h)&&(percent_difference>=0.1)){
 		 System.out.println("Not even close!");
 		}
 		
