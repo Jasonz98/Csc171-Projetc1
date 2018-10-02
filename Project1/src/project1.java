@@ -41,6 +41,8 @@ public class project1 {
          System.out.println(y);
          System.out.println("Your current score is:" + score);
           }
+		 
+	
    
     }
         
