@@ -58,7 +58,7 @@ public class project1 {
 		}
 		 System.out.println("Your current score is:" + score);
 		 System.out.println("Do you want to play again? yes/no: ");
-	  	 String control2 = scan.nextLine();
+	  	 String control2 = scan.next();
 	  	 if (control2.equals("yes")) {
 	  		 System.out.println("Let's start!");
 	  	 }else if (control2.equals("no")) {
