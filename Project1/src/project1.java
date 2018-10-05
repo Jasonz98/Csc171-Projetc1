@@ -29,6 +29,7 @@ public class project1 {
 	
 		while (game == true) {
 			//generate random numbers from 1 to 20
+			round = true;
 			h = 1 + ran.nextInt(20);
 			x = 1 + ran.nextInt(20);
 			
@@ -52,13 +53,16 @@ public class project1 {
 					if (answer == false){
 						game = false;
 						}
-				}
-				else
+				}else {
 					System.out.println("Do you wish to continue? (true/false)");
 				    boolean loop = sc.nextBoolean();
 				    if (loop == false){
-				        break;
+				        game = false;
+				    }else if (loop == true) {
+				    	round = false;
 				    }
+				    
+				}
 				    
 				    
 			}
@@ -69,6 +73,12 @@ public class project1 {
 	//declare a static method that performs one launch
 	public static boolean launch(int h, int x, double thetaD, double speed) {
 		
+		String[] g1 = {"Bravo", "You made it", "Nice work"};
+		String[] g2 = {"Too high", "Plenty of room", "Up to the sky"};
+		String[] g3 = {"Not quite over", "just a little off"};
+		String[] g4 = {"Not even close", "Try harder"}; 
+		
+		Random ran = new Random();
 		boolean win = true;
 		score -= 1;		
 		double thetaR = thetaD * Math.PI / 180;
@@ -76,29 +86,31 @@ public class project1 {
 		double pd = Math.abs(h-y) / h;
 		
 		if ((y > h) && (pd >= 0.1))
-		{	
-			System.out.println("Plenty of room!");
+		{	int index = ran.nextInt(g1.length);
+			System.out.println(g1[index]);
 			score += 3;
 			System.out.printf("Your current score is %d%n", score);
 			
 		}	
 		else if ((y > h) && (pd <= 0.1))
-		{
-			System.out.println("You made it!");
+		{   int index = ran.nextInt(g2.length);
+			System.out.println(g2[index]);
 			score += 5;
 			System.out.printf("Your current score is %d%n", score);
 			
 		}	
 		else if ((y < h) && (pd <= 0.1))
 		{	
-			System.out.println("Not quite over.");
+			int index = ran.nextInt(g3.length);
+			System.out.println(g3[index]);
 			win = false;
 			System.out.printf("Your current score is %d%n", score);
 			
 		}	
 		else if ((y < h) && ( pd >= 0.1))
 		{	
-			System.out.println("Not even close!");
+			int index = ran.nextInt(g4.length);
+			System.out.println(g4[index]);
 			score -=2; 
 			win = false;
 			System.out.printf("Your current score is %d%n", score);
