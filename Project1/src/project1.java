@@ -7,7 +7,16 @@ public class project1 {
 	public static int score = 0;
 	
 	public static void main(String[] args) {
-	
+         System.out.println("This is a TTY game. You have a catapult that can launch projectiles.");
+         System.out.println("Your goal is to let your projectile fly pass the wall.");
+         System.out.println("At the start of each round, you will be informed of the height of the wall and the distance from it.");
+         System.out.println("You will then be asked to input an angle and an intial speed.");
+         System.out.println("The computer will compute whether you make it over the wall.");
+         System.out.println("You have 0 point at the start and each round cost you 1 point");
+         System.out.println("You earn points each time clearing the wall and lose point hitting the wall");
+         System.out.println("Point earned or lost  vary slightly based on the distance from the top of the wall");
+         System.out.println("You will be informed of you score at the start and the end of a round");
+         System.out.println("Now, enter 'start' to start the game!");
 		Scanner sc = new Scanner(System.in);
 		Random ran = new Random();
 	
