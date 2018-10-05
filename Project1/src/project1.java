@@ -8,6 +8,9 @@ public class project1 {
 	   Random rand = new Random();
        Scanner scan = new Scanner(System.in);
        
+       String[] z = { "You made it", "Nice work", "Bravo"};
+       
+       
        //Variable to track score
        int score = 1; 
        
@@ -69,11 +72,12 @@ public class project1 {
 	       //If the distance between the projectile and the top of the wall is less than 10 percent of the wall height
 	       //The player gets better score
 	 	   if ((y > h) && (pd <= 0.1)){
-		     System.out.println("You made it!");
+		     int index = rand.nextInt(z.length);
+		     System.out.println(z[index]);
 		     score += 5;
 		   } else if ((y > h) && (pd >= 0.1)){
-		     System.out.println("Plenty of room! ");
-		     score += 3;
+			   int index = rand.nextInt(z.length);
+			    System.out.println(z[index]);
 		   } else if ((y < h) && (pd <= 0.1)){
 		     System.out.println("Not quite over!");	
 		   } else if ((y < h) && ( pd >= 0.1)){
