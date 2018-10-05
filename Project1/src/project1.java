@@ -9,7 +9,7 @@ public class project1 {
        Scanner scan = new Scanner(System.in);
        
        //Variable to track score
-       int score = 0; 
+       int score = 1; 
        
        //Instruction
        System.out.println("This is a TTY game. You have a catapult that can launch projectiles.");
